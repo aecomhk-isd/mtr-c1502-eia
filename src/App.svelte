@@ -74,7 +74,7 @@
 
   .nav {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1em;
     grid-auto-rows: minmax(100px, auto);
   }
@@ -82,7 +82,6 @@
   .nav-btn {
     margin: 1em 0;
     padding: 1em 2em;
-    grid-row: 1;
     border-radius: 1em;
     box-shadow: 3px 3px 8px #444140;
   }
