@@ -9,16 +9,27 @@
 
 <main>
   <div class="nav">
-    <button class="nav-btn" on:click={() => switchContent(1)}
-      >Existing View</button
+    <button
+      class="nav-btn"
+      class:active={show == 1}
+      on:click={() => switchContent(1)}>Existing View</button
     >
-    <button class="nav-btn" on:click={() => switchContent(2)}
+    <button
+      class="nav-btn"
+      class:active={show == 2}
+      on:click={() => switchContent(2)}
       >Day 1 without Mitigation Measures
     </button>
-    <button class="nav-btn" on:click={() => switchContent(3)}
+    <button
+      class="nav-btn"
+      class:active={show == 3}
+      on:click={() => switchContent(3)}
       >Day 1 with Mitigation Measures
     </button>
-    <button class="nav-btn" on:click={() => switchContent(4)}
+    <button
+      class="nav-btn"
+      class:active={show == 4}
+      on:click={() => switchContent(4)}
       >Year 10 with Mitigation Measures
     </button>
   </div>
@@ -80,18 +91,31 @@
   }
 
   .nav-btn {
-    margin: 1em 0;
+    margin: 1em 0 0 0;
     padding: 1em 2em;
-    border-radius: 1em;
+    border-radius: 1em 1em 0 0;
     box-shadow: 3px 3px 8px #444140;
+  }
+
+  .nav-btn.active {
+    background-color: #f376a3;
+    border: 0;
   }
 
   .content {
     width: 100%;
+    height: calc(100vh - 150px);
+    position: relative;
+    overflow: hidden;
   }
 
   .content-img {
-    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
     height: auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
   }
 </style>
