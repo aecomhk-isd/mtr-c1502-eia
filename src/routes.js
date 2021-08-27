@@ -14,5 +14,17 @@ export default {
       show: 1,
     },
   }),
+  "/ardeid-night": wrap({
+    asyncComponent: () => import("./routes/ArdeidNight.svelte"),
+  }),
+  "/ardeid-day": wrap({
+    asyncComponent: () => import("./routes/ArdeidDay.svelte"),
+  }),
+  "/fruit-bat-tmp": wrap({
+    asyncComponent: () => import("./routes/FruitBatTMP.svelte"),
+  }),
+  "/fruit-bat-ptr": wrap({
+    asyncComponent: () => import("./routes/FruitBatPTR.svelte"),
+  }),
   "*": Home,
 };
