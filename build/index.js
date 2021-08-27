@@ -1,2 +1,2 @@
-import{n as t}from"./main2.js";function a(a,{delay:n=0,duration:o=400,easing:e=t}={}){const i=+getComputedStyle(a).opacity;return{delay:n,duration:o,easing:e,css:t=>"opacity: "+t*i}}export{a as f};
+import{o as t}from"./main2.js";function a(a,{delay:o=0,duration:e=400,easing:i=t}={}){const n=+getComputedStyle(a).opacity;return{delay:o,duration:e,easing:i,css:t=>"opacity: "+t*n}}export{a as f};
 //# sourceMappingURL=index.js.map
