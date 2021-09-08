@@ -3,14 +3,24 @@
 
   const tabs = [
     {
-      title: "EIA No Mitigation Measures",
-      imgUrl: "images/noise_existing.png",
-      imgDesc: "Noise Existing",
+      title: "Daytime without Mitigation Measures",
+      imgUrl: "images/noise-02.png",
+      imgDesc: "Daytime without Mitigation Measures",
     },
     {
-      title: "With Mitigation Measures",
-      imgUrl: "images/noise_option2.png",
-      imgDesc: "Noise Option 2",
+      title: "Daytime with Mitigation Measures",
+      imgUrl: "images/noise-02-wm.png",
+      imgDesc: "Daytime with Mitigation Measures",
+    },
+    {
+      title: "Night-time without Mitigation Measures",
+      imgUrl: "images/noise-02-n.png",
+      imgDesc: "Night-time without Mitigation Measures",
+    },
+    {
+      title: "Night-time with Mitigation Measures",
+      imgUrl: "images/noise-02-n-wm.png",
+      imgDesc: "Night-time with Mitigation Measures",
     },
   ];
 </script>

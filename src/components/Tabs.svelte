@@ -28,7 +28,9 @@
           src={item.imgUrl}
           alt={item.imgDesc}
         />
-        <slot name="content">{item.content}</slot>
+        {#if $$slots.content}
+          <slot name="content">{item.content}</slot>
+        {/if}
       {/if}
     {/each}
   </div>

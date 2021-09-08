@@ -3,7 +3,7 @@
 </script>
 
 <div>
-  <h3>Index</h3>
+  <h3>Index - development use only</h3>
   <ul>
     <li><a href="/noise" use:link>Noise</a></li>
     <li><a href="/bridge" use:link>Bridge</a></li>

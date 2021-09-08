@@ -5,13 +5,13 @@ export default {
   "/bridge": wrap({
     asyncComponent: () => import("./routes/Bridge.svelte"),
     props: {
-      show: 1,
+      show: 0,
     },
   }),
   "/noise": wrap({
     asyncComponent: () => import("./routes/Noise.svelte"),
     props: {
-      show: 1,
+      show: 0,
     },
   }),
   "/ardeid-night": wrap({
