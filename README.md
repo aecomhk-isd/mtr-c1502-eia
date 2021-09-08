@@ -29,30 +29,6 @@ npm run build
 
 You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
 
-## Single-page app mode
-
-By default, sirv will only respond to requests that match files in `public`. This is to maximise compatibility with static fileservers, allowing you to deploy your app anywhere.
-
-If you're building a single-page app (SPA) with multiple routes, sirv needs to be able to respond to requests for _any_ path. You can make it so by editing the `"start"` command in package.json:
-
-```js
-"start": "sirv public --single"
-```
-
-## Using TypeScript (currently not used)
-
-The `setupTypeScript.js` is suppose to convert the project to a TypeScript environment. Not tested, currently not used.
-
-```bash
-node scripts/setupTypeScript.js
-```
-
-Or remove the script via:
-
-```bash
-rm scripts/setupTypeScript.js
-```
-
 ## Deployment
 
-Once the project is built, the static files will be produced in the `./public/` directory. You can copy these files to any web server, or in my case I branch called `gh-pages` is setup such that github will update and serve these files on every push.
+Once the project is built, the static files will be produced in the `./public/` directory. You can copy these files to any web server, or in my case a branch called `gh-pages` is setup such that github will update and serve these files on every push.
