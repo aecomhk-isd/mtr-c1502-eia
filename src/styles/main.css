@@ -1,8 +1,12 @@
-.content-img.center {
-  object-fit: contain;
-  transform: translateX(-50%);
+.content-div {
   position: absolute;
-  height: 100%;
+  top: 0;
+  width: 100%;
+}
+
+.content-img.center {
+  width: 100%;
+  height: auto;
 }
 
 .content-img.x-center {

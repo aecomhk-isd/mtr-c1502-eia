@@ -26,5 +26,8 @@ export default {
   "/fruit-bat-ptr": wrap({
     asyncComponent: () => import("./routes/FruitBatPTR.svelte"),
   }),
+  "/lvia-vp5": wrap({
+    asyncComponent: () => import("./routes/LVIA-VP5.svelte"),
+  }),
   "*": Home,
 };

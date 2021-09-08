@@ -11,5 +11,6 @@
     <li><a href="/ardeid-night" use:link>Ardeid Night</a></li>
     <li><a href="/fruit-bat-ptr" use:link>Fruit Bat PTR</a></li>
     <li><a href="/fruit-bat-tmp" use:link>Fruit Bat TMP</a></li>
+    <li><a href="/lvia-vp5" use:link>VP5</a></li>
   </ul>
 </div>
