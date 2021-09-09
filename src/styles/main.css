@@ -51,6 +51,17 @@ main {
   color: white;
 }
 
+@media (min-width: 640px) {
+  main {
+    max-width: none;
+  }
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .p-2 {
   padding: 2rem;
 }
@@ -63,10 +74,10 @@ main {
   text-align: center;
 }
 
-@media (min-width: 640px) {
-  main {
-    max-width: none;
-  }
+
+h2 {
+  margin: 0.5em 0;
+  font-size: 1.5em;
 }
 
 h4 {

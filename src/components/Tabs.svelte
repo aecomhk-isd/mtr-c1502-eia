@@ -2,6 +2,7 @@
   import { blur } from "svelte/transition";
 
   export let tabs = [];
+  export let title = "";
   export let show = 0;
 
   function switchContent(index) {
@@ -10,6 +11,9 @@
 </script>
 
 <main class="text-center">
+  {#if title != ""}
+    <h2>{title}</h2>
+  {/if}
   <div class={"nav-" + tabs.length}>
     {#each tabs as item, i}
       <button
@@ -19,7 +23,7 @@
       >
     {/each}
   </div>
-  <div class="content">
+  <div class:content={title != ""} class:content-no-title={title == ""}>
     {#each tabs as item, i (item.title)}
       {#if show == i}
         <div class="content-div" transition:blur={{ amount: 20 }}>
@@ -47,20 +51,15 @@
 </main>
 
 <style>
-  main {
-    text-align: center;
-    padding: 1em;
-    max-width: 240px;
-    margin: 0 auto;
-  }
-
-  @media (min-width: 640px) {
-    main {
-      max-width: none;
-    }
-  }
-
   .content {
+    width: 100%;
+    height: calc(100vh - 200px);
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .content-no-title {
     width: 100%;
     height: calc(100vh - 150px);
     position: relative;

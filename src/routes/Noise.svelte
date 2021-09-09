@@ -1,6 +1,7 @@
 <script>
   import Tabs from "../components/Tabs.svelte";
 
+  const title = "Rail Noise";
   const tabs = [
     {
       title: "Daytime without Mitigation Measures",
@@ -25,4 +26,4 @@
   ];
 </script>
 
-<Tabs {tabs} />
+<Tabs {tabs} {title} />

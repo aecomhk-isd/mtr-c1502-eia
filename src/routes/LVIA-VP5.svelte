@@ -1,6 +1,7 @@
 <script>
   import Tabs from "../components/Tabs.svelte";
 
+  const title = "Landscape & Visual - Viewpoint 5";
   const tabs = [
     {
       title: "Existing View",
@@ -97,4 +98,4 @@
   ];
 </script>
 
-<Tabs {tabs} />
+<Tabs {tabs} {title} />
