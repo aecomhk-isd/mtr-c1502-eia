@@ -5,22 +5,22 @@
   const tabs = [
     {
       title: "Daytime without Mitigation Measures",
-      imgUrl: "images/noise-03-day-wom.png",
+      imgUrl: "images/noise-04-day-wom.png",
       imgDesc: "Daytime without Mitigation Measures",
     },
     {
       title: "Daytime with Mitigation Measures",
-      imgUrl: "images/noise-03-day-wm.png",
+      imgUrl: "images/noise-04-day-wm.png",
       imgDesc: "Daytime with Mitigation Measures",
     },
     {
       title: "Night-time without Mitigation Measures",
-      imgUrl: "images/noise-03-night-wom.png",
+      imgUrl: "images/noise-04-night-wom.png",
       imgDesc: "Night-time without Mitigation Measures",
     },
     {
       title: "Night-time with Mitigation Measures",
-      imgUrl: "images/noise-03-night-wm.png",
+      imgUrl: "images/noise-04-night-wm.png",
       imgDesc: "Night-time with Mitigation Measures",
     },
   ];
